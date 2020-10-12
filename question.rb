@@ -6,5 +6,10 @@ class Question
     @answer = answer
   end
 
+  def check_answer(user_answer)
+    if user_answer == @answer
+      return true
+    end
+
 end
     
