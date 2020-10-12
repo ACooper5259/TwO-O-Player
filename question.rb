@@ -1,11 +1,13 @@
 class Question
-  attr_reader :text, :answer
-
-  def initialize(text, answer)
-    @text = text
-    @answer = answer
+  attr_reader :num1, :num2, :answer
+  
+  def initialize(num1, num2)
+   @num1 = num1
+   @num2 = num2
+   @answer = (num1 + num2).to_s
   end
 
+  
   def check_answer(user_answer)
     if user_answer == @answer
       return true

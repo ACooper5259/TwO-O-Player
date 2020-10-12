@@ -12,9 +12,8 @@ class Player
     puts "#{name}: YES! You are correct"
   end
   def lifeDown
-    @life -= 1
+    @lives -= 1
     puts "#{name}: Seriously? No, you are not correct!"
   end
-
   
 end
