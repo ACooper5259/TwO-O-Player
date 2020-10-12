@@ -10,6 +10,7 @@ class Question
     if user_answer == @answer
       return true
     end
+  end
 
 end
     
